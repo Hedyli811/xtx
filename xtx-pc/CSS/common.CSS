@@ -1,0 +1,218 @@
+/* 版心 */
+.wrapper {
+    margin:0 auto;
+    width: 1240px;
+}
+.shortcut{
+    height: 52px;
+    background-color: #333;
+}
+.shortcut .wrapper{
+     height: 52px;
+    display: flex;
+    justify-content: flex-end;
+   
+    
+}
+.shortcut ul{
+    display: flex;
+   line-height: 52px;
+}
+.shortcut li a{
+    padding: 0 15px;
+    border-right: 1px solid #999;
+    font-size: 14px;
+    color: white;
+}
+.shortcut li:last-child a{
+    border-right: none;
+}
+.shortcut li .iconfont{
+    margin-right: 4px;
+    vertical-align: middle;
+}
+.shortcut li .login {
+    color: #5eb69c;
+}
+.header {
+    display: flex;
+    margin-top: 22px;
+    /* 里面的很多元素测量距离时都需要减掉这个22来算margin */
+    margin-bottom: 22px;
+    height: 88px;
+    
+}
+
+/* logo */
+.logo{
+    width: 200px;
+    height: 88px;
+    margin-right: 40px;
+    
+}
+
+.logo a {
+    /* a是行内元素
+    所以插图片不生效要改成行内块元素
+    小兔鲜字要隐藏所以设置字体为0 */
+    display: block;
+    width: 200px;
+    height: 88px;
+    background-image: url(../images/logo.png);
+    font-size: 0;
+}
+.nav {
+
+    margin-top: 33px;
+    margin-right: 28px;
+}
+.nav ul {
+    display: flex;
+}
+.nav li {
+    margin-right: 47px;
+}
+.nav li a {
+     padding-bottom: 10px;
+
+}
+.nav li a:hover{
+    border-bottom:2px solid #5eb69c;
+    color:#5eb69c ;
+}
+.search {
+    display: flex;
+    margin-top: 33px;
+    margin-right: 45px;
+    width: 170px;
+    height: 34px;
+    border-bottom: 2px solid #F4F4F4;
+}
+.search .iconfont{
+    font-size: 18px;
+    color: #ccc;
+    margin-right: 8px;
+}
+.search input{
+    /* 浏览器优先生效input参数的默认宽度，解决办法就是设置0重置一下 */
+    width: 0;
+    flex: 1;
+}
+.search input::placeholder{
+    font-size: 16px;
+    color: #ccc;
+}
+.cart {
+    position: relative;
+    margin-top: 32px;
+    
+}
+.cart .iconfont{
+    font-size: 24px;
+}
+.cart i {
+    position: absolute;
+    top: 1px;
+    /* 希望数字2向右边撑开所以调整left */
+    left: 12px;
+    padding: 0 6px;
+    height: 15px;
+    background-color:  #e26237; 
+    border-radius: 8px;
+    font-size: 14px;
+    color: #F4F4F4;
+    line-height: 15px;
+}
+.footer {
+    height: 580px;
+    background-color:  #f5f5f5;
+}
+/* 底部 */
+.service {
+    height: 178px;
+    border-bottom: 1px solid #e8e8e8;
+    /* 观察服务区域几个盒子之间距离和两边一样所以padding用0之后用flex */
+    padding: 60px 0;
+}
+.service ul{
+    display: flex;
+    /* 调整主轴对齐方式 */
+    justify-content: space-evenly;
+}
+.service li{
+    display: flex;
+    width: 190px;
+    height: 58px;
+   
+}
+.service li h5{
+    margin-right: 20px;
+    width: 58px;
+    height: 58px;
+    background-image: url(../images/sprite.png);
+}
+.service li p {
+    font-size: 28px;
+    line-height: 58px;
+}
+.service li:nth-child(2) h5{
+    background-position: 0 -58px;
+}
+
+.help  {
+    display: flex;
+    /* 分析盒子左右，分布两边所以写以下 */
+    justify-content: space-between;
+    height: 300px;
+    padding-top: 60px;
+}
+.help .left {
+    display: flex;
+}
+.help .left dl {
+    margin-right:  84px;
+}
+/* 最后一个字多了一点为了以后内容变化方便所以把最后一个84去掉 */
+.help .left dl:last-child{
+    margin-right: 0;
+}
+.help .left dt{
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
+}
+.help .left dd{
+    margin-bottom: 10px;
+    
+}
+.help .left a{
+    color: #969696;
+}
+
+/* 二维码区域right */
+.help .right ul{
+    display: flex;
+}
+.help .right li:first-child{
+    margin-right: 55px;
+}
+.help .right .pic{
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+}
+.help .right p{
+    color:#969696 ;
+    text-align: center;
+}
+.copyright {
+    text-align: center;
+}
+.copyright p{
+    margin-bottom: 10px;
+    color: #a1a1a1;
+}
+.copyright p a{
+    margin: 0 10px;
+      color: #a1a1a1;
+}
